@@ -29,6 +29,9 @@
 		7F988EC72AE2D34000E0BCBD /* GFSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F988EBD2AE2D33F00E0BCBD /* GFSecureTextField.swift */; };
 		7F988ECB2AE2D35000E0BCBD /* RounderCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F988EC92AE2D35000E0BCBD /* RounderCorners.swift */; };
 		7F988ECC2AE2D35000E0BCBD /* SFSymbolModifire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F988ECA2AE2D35000E0BCBD /* SFSymbolModifire.swift */; };
+		CC0D910F2AE85DF400F14176 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0D910E2AE85DF400F14176 /* OnBoardingView.swift */; };
+		CC0D91112AE85E1C00F14176 /* GetStartedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0D91102AE85E1C00F14176 /* GetStartedView.swift */; };
+		CC0D91132AE85E5D00F14176 /* SlideToGetStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0D91122AE85E5D00F14176 /* SlideToGetStarted.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		7F988EBD2AE2D33F00E0BCBD /* GFSecureTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GFSecureTextField.swift; sourceTree = "<group>"; };
 		7F988EC92AE2D35000E0BCBD /* RounderCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RounderCorners.swift; sourceTree = "<group>"; };
 		7F988ECA2AE2D35000E0BCBD /* SFSymbolModifire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSymbolModifire.swift; sourceTree = "<group>"; };
+		CC0D910E2AE85DF400F14176 /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		CC0D91102AE85E1C00F14176 /* GetStartedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedView.swift; sourceTree = "<group>"; };
+		CC0D91122AE85E5D00F14176 /* SlideToGetStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideToGetStarted.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,11 +233,22 @@
 		7F988ECE2AE2D3F800E0BCBD /* App */ = {
 			isa = PBXGroup;
 			children = (
+				CC0D910D2AE85CED00F14176 /* OnBoardinReCreated */,
 				7F0D4CE02AE799AA0057C1CE /* Root */,
 				7F0D4CE22AE799BD0057C1CE /* Onboarding */,
 				7F0D4CE12AE799B40057C1CE /* Auth */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		CC0D910D2AE85CED00F14176 /* OnBoardinReCreated */ = {
+			isa = PBXGroup;
+			children = (
+				CC0D910E2AE85DF400F14176 /* OnBoardingView.swift */,
+				CC0D91102AE85E1C00F14176 /* GetStartedView.swift */,
+				CC0D91122AE85E5D00F14176 /* SlideToGetStarted.swift */,
+			);
+			path = OnBoardinReCreated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,15 +327,18 @@
 				7F988ECB2AE2D35000E0BCBD /* RounderCorners.swift in Sources */,
 				7F988EC22AE2D34000E0BCBD /* HomeSlider.swift in Sources */,
 				7F988E9E2AE2D29900E0BCBD /* RequestError.swift in Sources */,
+				CC0D91112AE85E1C00F14176 /* GetStartedView.swift in Sources */,
 				7F988ECC2AE2D35000E0BCBD /* SFSymbolModifire.swift in Sources */,
 				7F988EC72AE2D34000E0BCBD /* GFSecureTextField.swift in Sources */,
 				7F988EC42AE2D34000E0BCBD /* GFTextField.swift in Sources */,
 				7F988EAB2AE2D2BD00E0BCBD /* View.swift in Sources */,
 				7F988E9F2AE2D29900E0BCBD /* EndPoint.swift in Sources */,
 				7F988EC32AE2D34000E0BCBD /* OTPTextField.swift in Sources */,
+				CC0D91132AE85E5D00F14176 /* SlideToGetStarted.swift in Sources */,
 				7F988E5E2AE2D1BC00E0BCBD /* ContentView.swift in Sources */,
 				7F988E9D2AE2D29900E0BCBD /* HTTPClient.swift in Sources */,
 				7F988EAD2AE2D2BD00E0BCBD /* String.swift in Sources */,
+				CC0D910F2AE85DF400F14176 /* OnBoardingView.swift in Sources */,
 				7F988EAC2AE2D2BD00E0BCBD /* Codable.swift in Sources */,
 				7F988E5C2AE2D1BC00E0BCBD /* RoshettaApp.swift in Sources */,
 				7F988EA02AE2D29900E0BCBD /* LanguageManager.swift in Sources */,
