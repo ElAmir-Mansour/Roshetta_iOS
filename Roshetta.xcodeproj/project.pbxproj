@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F18FCAD2AFE9201003BCC9B /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F18FCAC2AFE9201003BCC9B /* TabBarView.swift */; };
 		7F50EC732AF016110060D6B6 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 7F50EC722AF016110060D6B6 /* GoogleSignIn */; };
 		7F50EC752AF016110060D6B6 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7F50EC742AF016110060D6B6 /* GoogleSignInSwift */; };
 		7F50EC772AF052ED0060D6B6 /* GoogleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F50EC762AF052ED0060D6B6 /* GoogleManager.swift */; };
@@ -65,6 +66,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F18FCAC2AFE9201003BCC9B /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		7F50EC762AF052ED0060D6B6 /* GoogleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleManager.swift; sourceTree = "<group>"; };
 		7F50EC782AF057F70060D6B6 /* Roshetta.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Roshetta.entitlements; sourceTree = "<group>"; };
 		7F50EC792AF0614E0060D6B6 /* AppleSigninManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSigninManager.swift; sourceTree = "<group>"; };
@@ -163,6 +165,14 @@
 				7F5E43122AEBF476008C2FC1 /* Model */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		7F18FCAB2AFE91E9003BCC9B /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				7F18FCAC2AFE9201003BCC9B /* TabBarView.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		7F5E42EE2AEBD88A008C2FC1 /* CustomFonts */ = {
@@ -450,6 +460,7 @@
 				7F5E43072AEBE844008C2FC1 /* Splash */,
 				7F0D4CE22AE799BD0057C1CE /* Onboarding */,
 				7F0D4CE12AE799B40057C1CE /* Auth */,
+				7F18FCAB2AFE91E9003BCC9B /* TabBar */,
 				7FB00F4F2AFD6AA500303EB2 /* Home */,
 			);
 			path = App;
@@ -613,6 +624,7 @@
 				7F6CA31E2AED056B00BAB446 /* AuthUseCase.swift in Sources */,
 				7F5E43052AEBE3AF008C2FC1 /* SFSymbols.swift in Sources */,
 				7F988EC12AE2D34000E0BCBD /* GFButton.swift in Sources */,
+				7F18FCAD2AFE9201003BCC9B /* TabBarView.swift in Sources */,
 				7F6CA33C2AEF0AA400BAB446 /* FacebookManager.swift in Sources */,
 				7F988E9C2AE2D29900E0BCBD /* HTTPMethod.swift in Sources */,
 				7F988EAE2AE2D2BD00E0BCBD /* UINavigationBarAppearance.swift in Sources */,
