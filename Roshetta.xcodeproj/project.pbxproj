@@ -62,6 +62,9 @@
 		7FB00F562AFD7CA800303EB2 /* ClincCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB00F552AFD7CA800303EB2 /* ClincCard.swift */; };
 		7FB00F582AFD7E3900303EB2 /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB00F572AFD7E3900303EB2 /* InfoRow.swift */; };
 		7FB00F5A2AFD7FF000303EB2 /* MedicalCenterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB00F592AFD7FF000303EB2 /* MedicalCenterCard.swift */; };
+		CC2B77C32B1521CB00A6EEA9 /* DoctorsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2B77C22B1521CB00A6EEA9 /* DoctorsListView.swift */; };
+		CC2B77C52B15220000A6EEA9 /* ClinicsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2B77C42B15220000A6EEA9 /* ClinicsListView.swift */; };
+		CC2B77C72B15221000A6EEA9 /* CentersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2B77C62B15221000A6EEA9 /* CentersListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +124,9 @@
 		7FB00F552AFD7CA800303EB2 /* ClincCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClincCard.swift; sourceTree = "<group>"; };
 		7FB00F572AFD7E3900303EB2 /* InfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
 		7FB00F592AFD7FF000303EB2 /* MedicalCenterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalCenterCard.swift; sourceTree = "<group>"; };
+		CC2B77C22B1521CB00A6EEA9 /* DoctorsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsListView.swift; sourceTree = "<group>"; };
+		CC2B77C42B15220000A6EEA9 /* ClinicsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicsListView.swift; sourceTree = "<group>"; };
+		CC2B77C62B15221000A6EEA9 /* CentersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentersListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -446,6 +452,7 @@
 		7F988ECE2AE2D3F800E0BCBD /* App */ = {
 			isa = PBXGroup;
 			children = (
+				CC2B77C12B15217800A6EEA9 /* Categories */,
 				7F0D4CE02AE799AA0057C1CE /* Root */,
 				7F5E43072AEBE844008C2FC1 /* Splash */,
 				7F0D4CE22AE799BD0057C1CE /* Onboarding */,
@@ -484,6 +491,24 @@
 			children = (
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CC2B77C12B15217800A6EEA9 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CC2B77C82B16080400A6EEA9 /* View */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		CC2B77C82B16080400A6EEA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC2B77C22B1521CB00A6EEA9 /* DoctorsListView.swift */,
+				CC2B77C42B15220000A6EEA9 /* ClinicsListView.swift */,
+				CC2B77C62B15221000A6EEA9 /* CentersListView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -571,9 +596,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2B77C52B15220000A6EEA9 /* ClinicsListView.swift in Sources */,
 				7F5E42ED2AEBD782008C2FC1 /* RoshettaAppViewModel.swift in Sources */,
 				7F6CA3202AED059F00BAB446 /* AuthRepositories.swift in Sources */,
 				7F5E43012AEBDFE6008C2FC1 /* Colors.swift in Sources */,
+				CC2B77C32B1521CB00A6EEA9 /* DoctorsListView.swift in Sources */,
 				7F5E43092AEBE878008C2FC1 /* SplashView.swift in Sources */,
 				7F6CA3052AEBFEE200BAB446 /* GFNextButton.swift in Sources */,
 				7F988EC52AE2D34000E0BCBD /* LoaderView.swift in Sources */,
@@ -612,6 +639,7 @@
 				7F6CA3242AED074C00BAB446 /* AuthServices.swift in Sources */,
 				7F6CA31E2AED056B00BAB446 /* AuthUseCase.swift in Sources */,
 				7F5E43052AEBE3AF008C2FC1 /* SFSymbols.swift in Sources */,
+				CC2B77C72B15221000A6EEA9 /* CentersListView.swift in Sources */,
 				7F988EC12AE2D34000E0BCBD /* GFButton.swift in Sources */,
 				7F6CA33C2AEF0AA400BAB446 /* FacebookManager.swift in Sources */,
 				7F988E9C2AE2D29900E0BCBD /* HTTPMethod.swift in Sources */,
@@ -757,7 +785,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Roshetta/Preview Content\"";
-				DEVELOPMENT_TEAM = 5Z792TF2FL;
+				DEVELOPMENT_TEAM = 7HVX2YCMN6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Roshetta/Info.plist;
@@ -789,7 +817,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Roshetta/Preview Content\"";
-				DEVELOPMENT_TEAM = 5Z792TF2FL;
+				DEVELOPMENT_TEAM = 7HVX2YCMN6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Roshetta/Info.plist;
