@@ -8,24 +8,28 @@
 import SwiftUI
 
 struct DoctorsListView: View {
+    // MARK: - PROPERTY
+    let columnSpacing: CGFloat = 10
+    let rowSpacing: CGFloat = 10
+    var gridLayout: [GridItem] {
+      return Array(repeating: GridItem(.flexible(), spacing: rowSpacing), count: 2)
+    }
+    
+    // MARK: - VIEW
     var body: some View {
         NavigationView {
             ScrollView (.vertical, showsIndicators: false) {
                 VStack {
-                    LazyVGrid(columns: grids, spacing: 14) {
-                        ForEach(vm.guides) { guide in
-                            GuideCard(image: guide.personal_photo,
-                                      guideName: "Abdalarhamn",
-                                      rating: guide.rate,
-                                      location: guide.address)
-                        }
-                    }
-                    .padding()
+                    LazyVGrid(columns: gridLayout, spacing: 26, content: {
+                        DoctorCard(image: Image("user"), name: "Abdalazem Saleh", specialization: "Surgery", rate: 3, price: "400", location: "Mansoura, Dakahlia")
+                        DoctorCard(image: Image("user"), name: "Abdalazem Saleh", specialization: "Surgery", rate: 3, price: "400", location: "Mansoura, Dakahlia")
+                        DoctorCard(image: Image("user"), name: "Abdalazem Saleh", specialization: "Surgery", rate: 3, price: "400", location: "Mansoura, Dakahlia")
+                    }) //: GRID
+                    .padding(14)
                 }
             }
-            .navigationTitle("Tour Guides")
+            .navigationTitle("Doctors")
             .navigationBarTitleDisplayMode(.automatic)
-            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
         }
     }
 }
