@@ -34,6 +34,9 @@ struct ClinicsListView: View {
     }
 }
 
-#Preview {
-    ClinicsListView()
+
+struct ClinicListView_Previews: PreviewProvider {
+    static var previews: some View {
+       ClinicsListView()
+    }
 }

@@ -55,6 +55,9 @@ struct CentersListView: View {
     }
 }
 
-#Preview {
-    CentersListView()
+
+struct CentersListView_Previews: PreviewProvider {
+    static var previews: some View {
+        CentersListView()
+    }
 }
