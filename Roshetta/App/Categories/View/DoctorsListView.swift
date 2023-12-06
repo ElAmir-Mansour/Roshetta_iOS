@@ -38,7 +38,7 @@ struct DoctorsListView: View {
 
 struct DoctorsListView_Previews: PreviewProvider {
     static var previews: some View {
-       ClinicsListView()
+       DoctorsListView()
     }
 }
 
